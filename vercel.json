@@ -1,0 +1,9 @@
+{
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    {
+      "source": "/((?!api/|assets/|favicon.svg|icons.svg).*)" ,
+      "destination": "/index.html"
+    }
+  ]
+}
