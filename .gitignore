@@ -1,0 +1,35 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django local database and media uploads
+backend/db.sqlite3
+backend/media/
+backend/staticfiles/
+
+# Frontend dependencies and builds
+frontend/node_modules/
+frontend/dist/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE / Editor configuration files
+.vscode/
+.idea/
+cloud-cursor/
+
+# OS files
+.DS_Store
+Thumbs.db

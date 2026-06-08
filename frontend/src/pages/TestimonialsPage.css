@@ -1,0 +1,93 @@
+/* ── Testimonials Page ────────────────────────────────────────────────── */
+.testi-page { min-height: 100vh; }
+
+.testi-masonry {
+  columns: 3;
+  column-gap: 24px;
+}
+
+.testi-full-card {
+  break-inside: avoid;
+  display: inline-block;
+  width: 100%;
+  padding: 36px 32px;
+  margin-bottom: 24px;
+}
+
+.testi-full-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.testi-big-quote {
+  font-family: Georgia, serif;
+  font-size: 4.5rem;
+  line-height: 0.7;
+  color: var(--gold);
+  opacity: 0.35;
+  font-style: italic;
+}
+
+.testi-full-text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.testi-full-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.testi-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold-border);
+  flex-shrink: 0;
+}
+
+.testi-name {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.testi-company {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.testi-project-type {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--gold-subtle);
+  color: var(--gold);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--gold-border);
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .testi-masonry { columns: 2; }
+}
+
+@media (max-width: 600px) {
+  .testi-masonry { columns: 1; }
+  .testi-full-card { padding: 28px 24px; }
+}
